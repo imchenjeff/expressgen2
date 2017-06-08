@@ -1,0 +1,992 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"express",
+				"expressSession"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"lo",
+				"LocalStrategy"
+			],
+			[
+				"userNam",
+				"userNamesUpRev"
+			],
+			[
+				"selected",
+				"selectedCities"
+			],
+			[
+				"netw",
+				"networkFetch"
+			],
+			[
+				"ne",
+				"networkResponse"
+			],
+			[
+				"all",
+				"allCache"
+			],
+			[
+				"wit",
+				"wittrStore"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"index",
+				"indexController"
+			],
+			[
+				"objec",
+				"objectStore"
+			],
+			[
+				"wittrS",
+				"witterStore"
+			],
+			[
+				"ser",
+				"serviceworker"
+			],
+			[
+				"pe",
+				"people"
+			],
+			[
+				"get",
+				"getAll"
+			],
+			[
+				"age",
+				"ageStore"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"cre",
+				"createIndex"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Peo",
+				"peopleStore"
+			],
+			[
+				"db",
+				"dbPromise"
+			],
+			[
+				"favo",
+				"favoriteAnimal"
+			],
+			[
+				"people",
+				"peopleStore"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"URLS",
+				"urlsToCache"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"up",
+				"_updateReady"
+			],
+			[
+				"cac",
+				"cacheNames"
+			],
+			[
+				"temp",
+				"tempfriendtraits"
+			],
+			[
+				"my",
+				"myvotelocation"
+			],
+			[
+				"idus",
+				"iduserfriend"
+			],
+			[
+				"iduse",
+				"iduser"
+			],
+			[
+				"myvote",
+				"myvotelocation"
+			],
+			[
+				"myv",
+				"myvotelocation"
+			],
+			[
+				"tru",
+				"True"
+			],
+			[
+				"ind",
+				"indices"
+			],
+			[
+				"iduser",
+				"iduserfriend"
+			],
+			[
+				"fri",
+				"friendtraits"
+			],
+			[
+				"frie",
+				"friendtraitcount"
+			],
+			[
+				"frien",
+				"friendtraitcount"
+			],
+			[
+				"test",
+				"testtrait2"
+			],
+			[
+				"path",
+				"pathfolders"
+			],
+			[
+				"data",
+				"data2"
+			],
+			[
+				"st",
+				"strainavg"
+			],
+			[
+				"sql",
+				"SQLite3"
+			],
+			[
+				"St",
+				"student"
+			],
+			[
+				"templinkedin",
+				"templinkedin0"
+			],
+			[
+				"w",
+				"work0t"
+			],
+			[
+				"to",
+				"toggle_visibility"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"img",
+				"img_parallax"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"background",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "[{\n\t\"username\": \"admin\",\n\t\"password\": \"password\",\n\t\"firstName\": \"Jeffrey\",\n\t\"lastName\": \"Chen\",\n\t\"email\": \"jeff@chenjeff.com\"\n}, \n{\n\t\"username\": \"jeff\"\n}]\n",
+			"settings":
+			{
+				"buffer_size": 155,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "models/user.js",
+			"settings":
+			{
+				"buffer_size": 376,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bin/www",
+			"settings":
+			{
+				"buffer_size": 1615,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".eslintrc",
+			"settings":
+			{
+				"buffer_size": 199,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 2065,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "const express = require('express');\n\nconst router = express.Router();\n\nconst User = require('../../models/user');\n\nrouter.get('/list', (req, res, next) => {\n  User.find((err, users) => {\n    if (err) {\n      return res.send(err);\n    }\n    return res.json(users);\n  });\n});\n\nmodule.exports = router;\n",
+			"file": "routes/api/users.js",
+			"file_size": 316,
+			"file_write_time": 131404808446673717,
+			"settings":
+			{
+				"buffer_size": 300,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "const express = require('express');\n\nconst router = express.Router();\n\n/* GET users listing. */\nrouter.get('/', (req, res, next) => {\n  res.send('respond with a resource');\n});\n\nconst testJSON = [\n  {\n    name: 'Jeff Chen',\n    username: 'jeffchen31',\n    email: 'jeff@chenjeff.com',\n  },\n  {\n    name: 'Grace Chen',\n    username: 'weridducks',\n    email: 'grace@chengrace.com',\n  },\n  {\n    name: 'Josh Smith',\n    username: 'smithjosh',\n    email: 'josh@smithjosh.com',\n  },\n];\n\n/* GET testJSON page. */\nrouter.get('/sendjson', (req, res, next) => {\n  res.json(testJSON);\n});\n\nmodule.exports = router;\n",
+			"file": "routes/users.js",
+			"file_size": 604,
+			"file_write_time": 131404814938995993,
+			"settings":
+			{
+				"buffer_size": 604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/index.js",
+			"settings":
+			{
+				"buffer_size": 608,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 332.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"sublimelinter"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Code/Tutorials/expressgen2",
+		"/C/Code/Tutorials/expressgen2/models",
+		"/C/Code/Tutorials/expressgen2/routes",
+		"/C/Code/Tutorials/expressgen2/routes/api"
+	],
+	"file_history":
+	[
+		"/C/Code/Tutorials/expressgen/routes/users.js",
+		"/C/Users/Jeffrey_Chen/Gemfile",
+		"/C/Users/Jeffrey_Chen/gemlock",
+		"/C/Users/Jeffrey_Chen/AppData/Local/lxss/home/jeffrey_chen/github.pub",
+		"/C/Users/Jeffrey_Chen/AppData/Local/lxss/rootfs/etc/hostname",
+		"/C/Users/Jeffrey_Chen/AppData/Local/lxss/rootfs/etc/hosts",
+		"/C/Users/Jeffrey_Chen/AppData/Local/lxss/home/Jeffrey_Chen/tutorials/myapp/config/database.yml",
+		"/C/Users/Jeffrey_Chen/AppData/Local/lxss/home/Jeffrey_Chen/githubkey.pub",
+		"/C/Users/Jeffrey_Chen/Dropbox/cheat sheet",
+		"/C/Code/Tutorials/expressgen2/package.json",
+		"/C/Code/Tutorials/expressgen2/routes/users.js",
+		"/C/Code/Tutorials/expressgen2/routes/index.js",
+		"/C/Code/Tutorials/expressgen2/models/user.js",
+		"/C/Code/Tutorials/expressgen2/routes/api/users.test.js",
+		"/C/Code/Tutorials/expressgen2/routes/api/users.js",
+		"/C/Code/Tutorials/expressgen2/routes/api/index.js",
+		"/C/Code/Tutorials/expressgen2/app.js",
+		"/C/Code/Tutorials/expressgen2/.eslintrc",
+		"/C/Code/Tutorials/expressgen2/views/index.ejs",
+		"/C/Code/Tutorials/yarntest/index.js",
+		"/C/Code/Tutorials/yarntest/package.json",
+		"/C/Code/nodetest2/nodetest2/views/index.jade",
+		"/C/Code/nodetest2/nodetest2/public/javascripts/global.js",
+		"/C/Code/nodetest2/nodetest2/public/stylesheets/style.css",
+		"/C/Code/nodetest2/nodetest2/routes/users.js",
+		"/C/Code/nodetest2/nodetest2/app.js",
+		"/C/Code/nodetest2/nodetest2/views/layout.jade",
+		"/C/Code/nodetest2/nodetest2/package.json",
+		"/C/Code/nodetest2/nodetest1/views/index.jade",
+		"/C/Code/nodetest2/nodetest1/routes/users.js",
+		"/C/Code/nodetest2/nodetest1/app.js",
+		"/C/Code/nodetest2/nodetest1/views/helloworld.jade",
+		"/C/Code/nodetest2/nodetest1/views/newuser.jade",
+		"/C/Code/nodetest2/nodetest2/views/error.jade",
+		"/C/Code/nodetest2/nodetest1/views/userlist.jade",
+		"/C/Code/nodetest2/nodetest1/routes/index.js",
+		"/C/Code/nodetest2/nodetest1/package.json",
+		"/C/Code/nodetest/datetimemod.js",
+		"/C/Code/nodetest/helloworld.js",
+		"/C/Code/your-first-pwapp-master/work/scripts/service-worker.js",
+		"/C/Code/wittr/public/js/main/IndexController.js",
+		"/C/Code/wittr/public/js/sw/index.js",
+		"/C/Code/your-first-pwapp-master/work/index.html",
+		"/C/Code/your-first-pwapp-master/work/scripts/app.js",
+		"/C/Code/your-first-pwapp-master/work/styles/inline.css",
+		"/C/Code/wittr/public/js/idb-test/index.js",
+		"/C/Code/your-first-pwapp-master/final/scripts/app.js",
+		"/C/Code/your-first-pwapp-master/final/index.html",
+		"/C/Code/your-first-pwapp-master/step-07/scripts/app.js",
+		"/C/Code/your-first-pwapp-master/step-05/scripts/app.js",
+		"/C/Code/your-first-pwapp-master/step-07/service-worker.js",
+		"/C/Code/your-first-pwapp-master/step-04/scripts/app.js",
+		"/C/Code/wittr/build/server/templates/idb-test.js",
+		"/C/Code/libs/localForage/examples/main.js",
+		"/C/Code/libs/localForage/examples/require.html",
+		"/C/Code/libs/localForage/examples/index.html",
+		"/C/Code/wittr/public/scss/_theme.scss",
+		"/C/Code/wittr/public/js/main/index.js",
+		"/C/Users/Jeffrey_Chen/Desktop/indexs.js",
+		"/C/Users/Jeffrey_Chen/Desktop/palette.sass",
+		"/C/Users/Jeffrey_Chen/Desktop/palette.css",
+		"/C/Code/wittr/public/scss/main.scss",
+		"/C/Code/your-first-pwapp-master/step-08/scripts/app.js",
+		"/C/Code/your-first-pwapp-master/work/scripts/idb/idb.js",
+		"/C/Code/your-first-pwapp-master/work/scripts/idb.js",
+		"/C/Code/your-first-pwapp-master/work/service-worker.js",
+		"/C/Riot Games/League of Legends/Config/game.cfg",
+		"/C/Users/Jeffrey_Chen/Desktop/Quoo/class2.py",
+		"/D/Scripts/Export Data/Learning.py",
+		"/D/Organize Me/Top 25",
+		"/C/Users/Jeffrey_Chen/Desktop/Quoo/class.py",
+		"/C/Users/Jeffrey_Chen/Desktop/Ruby/class.py",
+		"/C/Users/Jeffrey_Chen/Desktop/Quoo/class1.py",
+		"/C/Users/Jeffrey_Chen/AppData/Local/lxss/home/Jeffrey_Chen/toy_app/Gemfile",
+		"/C/Users/Jeffrey_Chen/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Jeffrey_Chen/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Jeffrey_Chen/Desktop/Ruby/class1.py",
+		"/C/Users/Jeffrey_Chen/Desktop/Anchor/simpleclient4.py",
+		"/C/Users/Jeffrey_Chen/Desktop/newnewgreen/learning.rb",
+		"/C/Users/Jeffrey_Chen/Desktop/Anchor/simpleserver4.py",
+		"/C/Users/Jeffrey_Chen/Desktop/Anchor/readme.txt",
+		"/C/Users/Jeffrey_Chen/Desktop/Anchor/readme.txt.txt",
+		"/C/Users/Jeffrey_Chen/Desktop/newapp/newapp/config/database.yml",
+		"/C/Python35/simpleclient4.py",
+		"/C/Python35/simpleserver4.py",
+		"/C/Users/Jeffrey_Chen/Desktop/newapp/newapp/app/controllers/application_controller.rb",
+		"/C/Users/Jeffrey_Chen/Desktop/newapp/newapp/config/routes.rb",
+		"/C/Users/Jeffrey_Chen/Desktop/newapp/newapp/config/environments/development.rb",
+		"/C/Users/Jeffrey_Chen/Desktop/newapp/newapp/db/seeds.rb",
+		"/C/Users/Jeffrey_Chen/Desktop/newapp/newapp/config/environments/production.rb",
+		"/D/Ruby/greenseer/strain.html.erb",
+		"/D/Ruby/greenseer/straincontroller.rb",
+		"/D/Ruby/greenseer-master1/test.rb",
+		"/D/Ruby/greenseer-master1/config/database.yml",
+		"/D/Ruby/greenseer-master1/config/environment.rb",
+		"/D/Ruby/greenseer-master1/Gemfile",
+		"/D/Ruby/greenseer-master/test.rb",
+		"/C/Bitnami/rubystack-2.2.5-4/postgresql/data/pg_hba.conf",
+		"/C/Program Files/PostgreSQL/9.5/data/pg_hba.conf",
+		"/D/Ruby/greenseer-master/config/database.yml",
+		"/C/Bitnami/rubystack-2.2.5-4/postgresql/data/postmaster.pid",
+		"/C/Program Files/PostgreSQL/9.5/data/postgresql.conf",
+		"/D/Ruby/greenseer-master/Gemfile",
+		"/D/Ruby/greenseer-master/app/models/checkin.rb",
+		"/D/Ruby/greenseer-master/app/models/user.rb",
+		"/D/Ruby/greenseer-master/app/models/strain.rb",
+		"/D/Ruby/greenseer-master/db/schema.rb",
+		"/D/Ruby/greenseer-master/db/migrate/20160731182437_create_users.rb",
+		"/D/Ruby/greenseer-master/db/seeds.rb",
+		"/C/Bitnami/rubystack-2.2.5-4/postgresql/data/postgresql.conf",
+		"/C/Bitnami/rubystack-2.2.5-4/postgresql/data/postgresql.auto.conf",
+		"/C/Bitnami/rubystack-2.2.5-4/postgresql/data/postmaster.opts",
+		"/D/Ruby/greenseer/sp500-data.sqlite",
+		"/D/Ruby/greenseer/hello.sqlite",
+		"/C/Users/Jeffrey_Chen/Desktop/node/main.js",
+		"/C/Users/Jeffrey_Chen/Desktop/node/input.txt",
+		"/D/Ruby/learning/mystuff.rb",
+		"/D/Ruby/newlibrary/simpleform/config/routes.rb",
+		"/D/Ruby/newlibrary/simpleform/app/views/students/new.html.erb",
+		"/D/Ruby/newlibrary/simpleform/app/controllers/students_controller.rb",
+		"/D/Ruby/newlibrary/simpleform/app/models/student.rb",
+		"/D/Ruby/learning/learning.html",
+		"/D/Ruby/newlibrary/first_app/config/environments/development.rb",
+		"/D/Ruby/newlibrary/first_app/config/puma.rb",
+		"/D/Ruby/newlibrary/first_app/config/initializers/assets.rb",
+		"/D/Ruby/newlibrary/first_app/config/cable.yml",
+		"/D/Ruby/newlibrary/first_app/config/environments/production.rb",
+		"/D/Ruby/newlibrary/first_app/config/application.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"user",
+			"'",
+			"var",
+			"res",
+			"idb",
+			"app.selectedCities",
+			"selectedCities",
+			"TODO",
+			"startsWith",
+			"clean",
+			"caches.open",
+			"cache",
+			"allCa",
+			"img",
+			"serve",
+			"showing",
+			"All",
+			"promise",
+			"wittr",
+			"wittrs",
+			"dbProm",
+			"showing",
+			"load",
+			"Cached",
+			"db",
+			"wittrStore",
+			"witter",
+			"fucn",
+			"indexController",
+			"indexController ",
+			"log",
+			"service",
+			"serviceWorker",
+			"js",
+			"idb",
+			"local",
+			"saveSelectedCities",
+			"selectedCities",
+			"button",
+			"butAddCity",
+			"window",
+			"butaddcity",
+			"votesocation",
+			"tel",
+			"Users",
+			"jeff",
+			"friendtraits",
+			"users",
+			"path",
+			"collected",
+			"pathfolder",
+			"port",
+			"5432",
+			"')",
+			"delay",
+			"conncected",
+			"bounce",
+			"scale",
+			"400",
+			"40px",
+			"cta",
+			"\n  color: rgba(255,175,0,1);",
+			"tada",
+			"LOGO",
+			"main",
+			"navresume",
+			"(255,105,100,0)",
+			"(255,105,100,1)",
+			"profile("
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"const",
+			"voteslocation",
+			"table_votes",
+			"table_users",
+			"navabout",
+			"(0,170,144,0)",
+			"(0,170,144,1)"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Code\\Tutorials\\expressgen2"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "models/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "bin/www",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								988,
+								988
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": ".eslintrc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								683,
+								688
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "routes/api/users.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "routes/users.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "routes/index.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 315.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 162.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
